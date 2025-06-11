@@ -11,31 +11,31 @@ Dataset
   
 Categories mapped:
 
-  0: Credit reporting, credit repair services, or other personal consumer reports
-  
-  1: Debt collection
-  
-  2: Consumer/Student/Payday/Vehicle loan
-  
-  3: Mortgage
+    0: Credit reporting, credit repair services, or other personal consumer reports
+    
+    1: Debt collection
+    
+    2: Consumer/Student/Payday/Vehicle loan
+    
+    3: Mortgage
 
 Data Preprocessing
 
-  Missing values removed for relevant columns
-  
-  Product categories mapped to integer labels
-  
-  Text cleaning:
-  
-    Lowercasing, punctuation and number removal
+      Missing values removed for relevant columns
+      
+      Product categories mapped to integer labels
+      
+    Text cleaning:
     
-    Stopword removal and lemmatization (NLTK)
-  
-  Text length and class distribution visualized
+      Lowercasing, punctuation and number removal
+      
+      Stopword removal and lemmatization (NLTK)
+    
+    Text length and class distribution visualized
 
 Feature Engineering
 
-  Text vectorized using TF-IDF (max 5000 features, unigrams and bigrams)
+    Text vectorized using TF-IDF (max 5000 features, unigrams and bigrams)
 
 Models Implemented
 
@@ -76,38 +76,38 @@ Requirements
 
 Note
   
-  The Random Forest classifier was not implemented due to system constraints. Future work could include implementing this model for comparison.
+    The Random Forest classifier was not implemented due to system constraints. Future work could include implementing this model for comparison.
 
-  All NLP preprocessing steps are handled with NLTK.
+    All NLP preprocessing steps are handled with NLTK.
 
 Results
 
-  Best performance: LinearSVC and Logistic Regression (accuracy ~0.90)
-  
-  Naive Bayes performed moderately well (accuracy ~0.85)
-  
-  Random Forest code present, but model results not completed or reported
+    Best performance: LinearSVC and Logistic Regression (accuracy ~0.90)
+    
+    Naive Bayes performed moderately well (accuracy ~0.85)
+    
+    Random Forest code present, but model results not completed or reported
 
 Cross-Validation
 
-  5-fold cross-validation performed on the best model (LinearSVC)
-  
-  Mean CV accuracy reported
+    5-fold cross-validation performed on the best model (LinearSVC)
+    
+    Mean CV accuracy reported
 
 Prediction Functionality
 
-  Utility function provided to predict the category of new complaint texts using the trained model and preprocessing pipeline
+    Utility function provided to predict the category of new complaint texts using the trained model and preprocessing pipeline
 
 Future Improvements
 
-  Implement Random Forest classifier
+    Implement Random Forest classifier
+    
+    Experiment with deep learning models
+    
+    Perform hyperparameter tuning
+    
+    Address class imbalance if present
+    
+    Deploy as a web application
   
-  Experiment with deep learning models
-  
-  Perform hyperparameter tuning
-  
-  Address class imbalance if present
-  
-  Deploy as a web application
-
 
