@@ -105,6 +105,8 @@ Future Improvements
     Experiment with deep learning models
     
     Perform hyperparameter tuning
+
+License MIT © AKASH M
     
     Address class imbalance if present
     
